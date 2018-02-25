@@ -3,11 +3,8 @@ MAINTAINER tilldettmering@gmail.com+
 
 ENV SHELL /bin/bash
 
-ADD Pipfile app/
+ADD requirements.txt app/
 
 WORKDIR app/
 
-RUN pip --no-cache-dir install pipenv && \
-    pipenv install
-
-ENTRYPOINT pipenv shell
+RUN pip --no-cache-dir install -r requirements.txt
