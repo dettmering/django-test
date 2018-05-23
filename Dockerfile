@@ -3,6 +3,8 @@ MAINTAINER tilldettmering@gmail.com+
 
 ENV SHELL /bin/bash
 
+ADD requirements.txt app/
+
 WORKDIR app/
 
 RUN set -ex && \
