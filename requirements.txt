@@ -7,4 +7,3 @@ requests==2.18.4
 django-crispy-forms==1.7.2
 neomodel
 django-neomodel
-numpy
