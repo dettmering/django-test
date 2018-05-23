@@ -8,4 +8,4 @@ WORKDIR app/
 RUN set -ex && \
     apk update && \
     apk add --no-cache build-base postgresql-dev && \
-    pip --no-cache-dir install pipenv
+    pip --no-cache-dir install -r requirements.txt
